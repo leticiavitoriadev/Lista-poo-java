@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+
+    Scanner scan = new Scanner(System.in);
+    String nome;
+    double salario;
+    double reajuste;
+    double total;
+
+    System.out.println("Digite o nome do funcionario: ");
+    nome = scan.nextLine();
+
+    System.out.println("Informe seu salario: ");
+    salario = scan.nextDouble();
+
+    reajuste = salario * 0.20;
+    total = salario + reajuste;
+
+    System.out.println("Nome: "+nome);
+    System.out.println("Salario com reajuste: "+total);
+  }
+}
