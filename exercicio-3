@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    double valor;
+    double valor_final;
+    System.out.println("Informe o valor do carro: ");
+    valor = sc.nextDouble();
+
+    valor_final = valor+(valor*0.55);
+
+    System.out.println("O valor final a ser pago é de: " +valor_final);
+    
+  }
+}
