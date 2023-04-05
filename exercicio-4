@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    long segundos =  31557600;
+    int idade;
+    long resultado;
+    System.out.println("Informe sua idade: ");
+    idade = sc.nextInt();
+
+    resultado = idade * segundos;
+
+    System.out.println("Sua idade em segundos é: " +resultado);
+    
+  }
+}
