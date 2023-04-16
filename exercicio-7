@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Main {
+
+  public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    double desconto;
+    double total;
+
+    System.out.print("Informe sua matrícula: ");
+    int matri = input.nextInt();
+    
+    System.out.print("Informe seu nome: ");
+    String nome = input.next();
+
+    System.out.print("Informe seu salário bruto: ");
+    double sal = input.nextDouble();
+
+    desconto = sal * 0.15;
+    total = sal - desconto;
+
+    System.out.println("\nMetrícula: \n" +matri);
+    System.out.println("Nome completo: \n" +nome );
+    System.out.println("Salário Bruto: \n" +sal);
+    System.out.println("Dedução INSS: \n" +desconto);
+    System.out.println("Salário Líquido: " +total);
+
+  }
+
+}
