@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Main {
+
+  public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    float fah;
+
+    System.out.print("Informe a temperatura em Celsius: ");
+    float temp = input.nextFloat();
+
+    fah = (temp * 9/5) + 32;
+
+    System.out.println("\nTemperatura em Fahrenheit: " +fah);
+  }
+
+}
